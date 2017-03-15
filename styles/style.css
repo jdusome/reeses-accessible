@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Parisienne');
+
+/*
+Orange - #ff7300
+Yellow - #fff200
+Brown - #562300
+White - #f5f7f6
+*/
+
+html {
+    background-color: #ff7300;
+}
+
+body {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 960px;
+    min-width: 720px;
+    font-size: 100%;
+	line-height: 1.4;
+    background-color: #f5f7f6;
+    color: #562300;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Size font according to a typographic scale */
+
+h1 {
+	font-size: 3.375em;
+}
+
+h2 {
+	font-size: 2.25em;
+    background-color: #fff200;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+p {
+	text-rendering: optimizeLegibility;
+}
+
+/* ---------------------------------------------- */
+
+.container {
+    display: flex;
+}
+
+header {
+    padding: 10px;
+}
+
+/* This is used to keep screen-reader and SEO functionality, without using display:none */
+header h1 {
+    text-indent:-99999px;
+    font-size:0;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+header img:first-of-type {
+    margin-bottom: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container section {
+    order: 2;
+    width: 60%;
+}
+
+.container section h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.container section p {
+    background-color: #562300;
+    text-align: center;
+    font-size: 120%;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container section p:first-of-type {
+    margin-top: 0;
+}
+
+.container section p:nth-of-type(2n){
+    color: #fff200;
+}
+
+.container section p:nth-of-type(2n-1){
+    color: #ff7300;
+}
+
+.container section img {
+    display: block;
+    margin: 0 auto;
+}
+
+.nutrition {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nutrition section {
+    width: 50%;
+}
+
+.nutrition h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.nutrition ul {
+    font-weight: bold;
+    line-height: 1.6em;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    margin: auto auto;
+}
+
+.nutrition em {
+    font-style: normal;
+    color: #ff7300;
+    text-shadow: 0.5px 0.5px 0.5px #562300;
+    margin-right: 2px;
+}
+
+.nutrition section:nth-of-type(2){
+    min-width: 410px;
+}
+
+nav h2, aside h2 {
+    font-family: 'Parisienne', cursive;
+    text-align: center;
+}
+
+nav {
+    order: 1;
+    width: 20%;
+    min-width: 168px;
+}
+
+nav h2 {
+    margin-bottom: 0;
+    border-bottom: 2px solid #562300;
+}
+
+nav a {
+    text-align: center;
+    display: block;
+    color: #fff200;
+    background-color: #562300;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #ff7300;
+    text-decoration: none;
+}
+
+nav a:focus {
+    background-color: #ff7300;
+    color: #562300;
+}
+
+nav a:hover {
+    background-color: #ff7300;
+    color: #562300;
+}
+
+nav a:active {
+    /* background-color: #ff7300; */
+    color: #fff200;
+}
+
+aside {
+    order: 3;
+    width: 20%;
+}
+
+aside h2 {
+    margin-bottom: 0;
+}
+
+aside h3 {
+    background-color: #562300;
+    color: #ff7300;
+    margin: 0;
+    text-align: center;
+    padding: 2px;
+}
+
+aside form {
+    width: 125px;
+    margin: 20px auto;
+}
+
+aside label {
+    font-weight: bold;
+}
+
+aside button {
+    margin-top: 10px;
+    color: #562300;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+aside img {
+    display: block;
+    margin: 0 auto;
+}
+
+main > section:last-of-type h3 {
+    background-color: #562300;
+    color: #fff200;
+    text-align: center;
+    padding: 8.5px;
+    margin-bottom: 0;
+}
+
+main > section:last-of-type ul {
+    font-size: 75%;
+}
+
+main > section:last-of-type h4 {
+    margin: 10px;
+    margin-left: 20px;
+}
+
+main > section:last-of-type a {
+    color: #ff7300;
+}
+
+main > section:last-of-type a:focus {
+    background-color: #ff7300;
+    color: #562300;
+}
+
+main > section:last-of-type a:hover {
+    background-color: #ff7300;
+    color: #562300;
+}
+
+main > section:last-of-type a:active {
+    /* background-color: #ff7300; */
+    color: #fff200;
+}
+
+footer {
+    background-color: #ff7300;
+    color: #f5f7f6;
+    padding-top: 1px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px #562300;
+}
