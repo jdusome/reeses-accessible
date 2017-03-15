@@ -17,7 +17,7 @@
         </header>
 
          <!-- Main Section -->
-        <main>
+        <main role="main">
             <!-- container used to hold the content between the header and footer -->
             <div class="container">
 
@@ -67,6 +67,13 @@
                         <button>Submit</button>
                     </form>
                     <img src="images/peanut-butter-cup1.png" alt="A reese's cup">
+                    <h3>How Many Peanut Butter Cups Can You Eat?</h3>
+                    <form>
+                        <label for="number">Reese Cups:</label>
+                        <input type="text" role="alert" aria-live="assertive" readonly value="0" id="number" />
+                        <button type="button" title="add 3" aria-controls="number">Add</button>
+                        <button type="button" title="subtract 3" aria-controls="number">Subtract</button>
+                    <form>
                 </aside>
             </div><!-- end of container -->
             <div class="nutrition">

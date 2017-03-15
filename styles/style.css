@@ -211,6 +211,10 @@ aside form {
     margin: 20px auto;
 }
 
+aside form:nth-of-type(2) input {
+    width: 100%;
+}
+
 aside label {
     font-weight: bold;
 }
@@ -224,7 +228,7 @@ aside button {
 
 aside img {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 main > section:last-of-type h3 {
