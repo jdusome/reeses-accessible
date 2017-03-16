@@ -77,7 +77,7 @@
                         <input type="radio" name="favreese" value="mini" id="miniinput" aria-labelledby="mini" aria-checked="false">
                         <label for="mini" id="mini" aria-hidden="true">Mini</label><br>   
                         <button>Submit</button>
-                        <div style="visibility:hidden" id="favouritestatus"></div>
+                        <div class="descriptor" id="favouritestatus"></div>
                     </form>
                     <img src="images/peanut-butter-cup1.png" alt="">
 
@@ -85,10 +85,10 @@
                     <!-- This form is a live element, which means it will alert the user of any changes -->
                     <form role="form" aria-describedby="reesesnumber" aria-live="assertive">
                         <label for="number" id="cuplabel" aria-hidden="true">Reese Cups:</label>
-                        <input type="text" aria-live="assertive" readonly value="0" id="reese-number" aria-labelledby="cuplabel" aria-describedby="reesestatus"/>
+                        <input type="text" aria-live="assertive" readonly aria-readonly="true" value="0" id="reese-number" aria-labelledby="cuplabel" aria-describedby="reesestatus"/>
                         <button type="button" title="add-3" id="add-3" aria-controls="reese-number">Add</button>
                         <button type="button" title="subtract-3" id="subtract-3" aria-controls="reese-number">Subtract</button>
-                        <div style="visibility:hidden" id="reesestatus"></div>
+                        <div class="descriptor" id="reesestatus"></div>
                     <form>
                     <img src="images/3-cups.png" alt="Only three Reese's Cups? My Grandma eats more than that!" style="display:none" id="3-cups">
                     <img src="images/6-cups.png" alt="Six Reese's Cups? You can do better!" style="display:none" id="6-cups">

@@ -57,7 +57,7 @@ header {
 }
 
 /* This is used to keep screen-reader and SEO functionality, without using display:none */
-header h1 {
+header h1, .descriptor {
     text-indent:-99999px;
     font-size:0;
 }
@@ -243,10 +243,17 @@ main > section:last-of-type ul {
     font-size: 75%;
 }
 
+main > section:last-of-type li:hover,
+main > section:last-of-type li:focus
+{
+    font-size: 125%;
+}
+
 main > section:last-of-type h4 {
     margin: 10px;
     margin-left: 20px;
 }
+
 
 main > section:last-of-type a {
     color: #ff7300;
