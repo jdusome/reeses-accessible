@@ -5,6 +5,11 @@
 let addThreeButton = document.getElementById("add-3");
 let subThreeButton = document.getElementById("subtract-3");
 let reeseNumber = document.getElementById("reese-number");
+let cupsimage3 = document.getElementById("3-cups");
+let cupsimage6 = document.getElementById("6-cups");
+let cupsimage9 = document.getElementById("9-cups");
+let cupsimage12 = document.getElementById("12-cups");
+
 
 //Reese Number Section
 
@@ -40,10 +45,36 @@ function ReeseCounter(event) {
                 reeseNumber.value = currentNumber;   
             }
         break;
+    }
         //depending on how many Reese's have been selected, change pictures/aria elements
         switch(parseInt(reeseNumber.value)){
-            
-        }
+            case 0:
+                cupsimage3.style.display = "none";
+            break;
+            case 3:
+                cupsimage3.style.display = "initial";
+                cupsimage6.style.display = "none";
+            break;
+            case 6:
+                cupsimage3.style.display = "none";
+                cupsimage6.style.display = "initial";
+                cupsimage9.style.display = "none";
+            break;
+            case 9:
+                cupsimage6.style.display = "none";
+                cupsimage9.style.display = "initial";
+                cupsimage12.style.display = "none";
+
+            break;
+            case 12:
+                cupsimage9.style.display = "none";
+                cupsimage12.style.display = "initial";
+            break;
+            case 20:
+            break;
+            case 99:
+            break;
+        
     }
 }
 
