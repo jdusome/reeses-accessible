@@ -61,39 +61,40 @@
                     <h3 id="reesesfavourite">Which Reese's Peanut Butter Cup is Your Favourite?</h3>
 
                     <!-- This form is a live element, which means it will alert the user of any changes -->
-                    <!-- aria-atomic = false will only present relevant changes to the user -->
                     <!-- aria-describedby is used so that the screen-reader has a description for the form -->
-                    <form role="form" aria-live="assertive" aria-describedby="reesesfavourite">
+                    <form role="form" aria-live="assertive" aria-describedby="reesesfavourite" id="favouriteform">
                         <!-- aria-labelledby tags are used so that the screen reader doesn't repeat each label twice -->
-                        <input type="radio" name="favreese" value="classic" aria-labelledby="classic">
+                        <input type="radio" name="favreese" value="classic" id="classicinput" aria-describedby="favouritestatus" aria-labelledby="classic">
                         <label for="classic" id="classic" aria-hidden="true">Classic</label><br>
-                        <input type="radio" name="favreese" value="white" aria-labelledby="white">
+                        <input type="radio" name="favreese" value="white" id="whiteinput" aria-describedby="favouritestatus" aria-labelledby="white">
                         <label for="white" id="white" aria-hidden="true">White</label><br>
-                        <input type="radio" name="favreese" value="reesespieces" aria-labelledby="reesespieces">
+                        <input type="radio" name="favreese" value="reesespieces" id="reesespiecesinput" aria-describedby="favouritestatus" aria-labelledby="reesespieces">
                         <label for="reesespieces" id="reesespieces" aria-hidden="true">Reese's Pieces</label><br>
-                        <input type="radio" name="favreese" value="crunchy" aria-labelledby="crunchy">
+                        <input type="radio" name="favreese" value="crunchy" id="crunchyinput" aria-describedby="favouritestatus" aria-labelledby="crunchy">
                         <label for="crunchy" id="crunchy" aria-hidden="true">Crunchy</label><br>
-                        <input type="radio" name="favreese" value="dark" aria-labelledby="dark">
+                        <input type="radio" name="favreese" value="dark" id="darkinput" aria-describedby="favouritestatus" aria-labelledby="dark">
                         <label for="dark" id="dark" aria-hidden="true">Dark</label><br>
-                        <input type="radio" name="favreese" value="mini" aria-labelledby="mini">
+                        <input type="radio" name="favreese" value="mini" id="miniinput" aria-describedby="favouritestatus" aria-labelledby="mini">
                         <label for="mini" id="mini" aria-hidden="true">Mini</label><br>   
                         <button>Submit</button>
+                        <div style="visibility:hidden" id="favouritestatus"></div>
                     </form>
                     <img src="images/peanut-butter-cup1.png" alt="">
 
                     <h3 id="reesesnumber">How Many Peanut Butter Cups Can You Eat?</h3>
                     <!-- This form is a live element, which means it will alert the user of any changes -->
-                    <!-- aria-atomic = false will only present relevant changes to the user -->
-                    <form role="form" aria-live="assertive" aria-describedby="reesesnumber">
-                        <label for="number">Reese Cups:</label>
-                        <input type="text" role="alert" aria-live="assertive" readonly value="0" id="reese-number"/>
-                        <button type="button" title="add-3" id="add-3" aria-controls="number">Add</button>
-                        <button type="button" title="subtract-3" id="subtract-3" aria-controls="number">Subtract</button>
+                    <form role="form" aria-describedby="reesesnumber" aria-live="assertive">
+                        <label for="number" id="cuplabel" aria-hidden="true">Reese Cups:</label>
+                        <input type="text" aria-live="assertive" readonly value="0" id="reese-number" aria-labelledby="cuplabel" aria-describedby="reesestatus"/>
+                        <button type="button" title="add-3" id="add-3" aria-controls="reese-number">Add</button>
+                        <button type="button" title="subtract-3" id="subtract-3" aria-controls="reese-number">Subtract</button>
+                        <div style="visibility:hidden" id="reesestatus"></div>
                     <form>
                     <img src="images/3-cups.png" alt="Only three Reese's Cups? My Grandma eats more than that!" style="display:none" id="3-cups">
                     <img src="images/6-cups.png" alt="Six Reese's Cups? You can do better!" style="display:none" id="6-cups">
                     <img src="images/9-cups.png" alt="Nine Reese's Cups! Now that's an achievement!" style="display:none" id="9-cups">
                     <img src="images/12-cups.png" alt="Twelve Reese's Cups! A timeless achievement indeed!'" style="display:none" id="12-cups">
+
                 </aside>
 
             </div><!-- end of container -->
