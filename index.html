@@ -58,29 +58,33 @@
                 <!-- Aside Section -->
                 <aside role="complementary">
                     <h2>Poll</h2>
-                    <h3>Which Reese's Peanut Butter Cup is Your Favourite?</h3>
+                    <h3 id="reesesfavourite">Which Reese's Peanut Butter Cup is Your Favourite?</h3>
 
                     <!-- This form is a live element, which means it will alert the user of any changes -->
-                    <form role="form" aria-live="assertive">
-                        <input type="radio" name="favreese" value="classic" id="classic">
+                    <!-- aria-atomic = false will only present relevant changes to the user -->
+                    <!-- aria-describedby is used so that the screen-reader has a description for the form -->
+                    <form role="form" aria-live="assertive" aria-atomic="false" aria-describedby="reesesfavourite">
+                        <!-- aria-labelledby tags are used so that the screen reader doesn't repeat each label twice -->
+                        <input type="radio" name="favreese" value="classic" id="classic" aria-labelledby="classic">
                         <label for="classic">Classic</label><br>
-                        <input type="radio" name="favreese" value="white" id="white">
+                        <input type="radio" name="favreese" value="white" id="white" aria-labelledby="white">
                         <label for="white">White</label><br>
-                        <input type="radio" name="favreese" value="reesespieces" id="reesespieces">
+                        <input type="radio" name="favreese" value="reesespieces" id="reesespieces" aria-labelledby="reesespieces">
                         <label for="reesespieces">Reese's Pieces</label><br>
-                        <input type="radio" name="favreese" value="crunchy" id="crunchy">
+                        <input type="radio" name="favreese" value="crunchy" id="crunchy" aria-labelledby="crunchy">
                         <label for="crunchy">Crunchy</label><br>
-                        <input type="radio" name="favreese" value="dark" id="dark">
+                        <input type="radio" name="favreese" value="dark" id="dark" aria-labelledby="dark">
                         <label for="dark">Dark</label><br>
-                        <input type="radio" name="favreese" value="mini" id="mini">
+                        <input type="radio" name="favreese" value="mini" id="mini" aria-labelledby="mini">
                         <label for="mini">Mini</label><br>   
                         <button>Submit</button>
                     </form>
                     <img src="images/peanut-butter-cup1.png" alt="A reese's cup">
 
-                    <h3>How Many Peanut Butter Cups Can You Eat?</h3>
-
-                    <form role="form" aria-live="assertive">
+                    <h3 id="reesesnumber">How Many Peanut Butter Cups Can You Eat?</h3>
+                    <!-- This form is a live element, which means it will alert the user of any changes -->
+                    <!-- aria-atomic = false will only present relevant changes to the user -->
+                    <form role="form" aria-live="assertive" aria-atomic="false" aria-describedby="reesesnumber">
                         <label for="number">Reese Cups:</label>
                         <input type="text" role="alert" aria-live="assertive" readonly value="0" id="reese-number" />
                         <button type="button" title="add-3" id="add-3" aria-controls="number">Add</button>
