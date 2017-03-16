@@ -11,17 +11,30 @@
     let cupsimage12 = document.getElementById("12-cups");
     let reeseStatus = document.getElementById("reesestatus")
     let favouriteForm = document.getElementById("favouriteform");
+    let favouriteStatus = document.getElementById("favouritestatus");
 
     //Favourite Reese Section
     favouriteForm.addEventListener("click", FavouriteReese);
 
     function FavouriteReese(event) {
 
-        for(var i = 0; i < favouriteForm.length; i++){
-        if(favouriteForm[i].checked){
-            console.log(`We got ${favouriteForm[i].value}`);
+        //create a loop which will go through each radiobox on favourite form
+        for (var i = 0; i < favouriteForm.length; i++) {
+
+            //if the combobox is checked
+            if (favouriteForm[i].checked) {
+                //set the aria-checked to true
+                favouriteForm[i].setAttribute("aria-checked", "true");
+                //change our description
+                favouriteStatus.innerText = `Your favourite Reese's Cup is ${favouriteForm[i].value}`;
+            }
+
+            //the combobox is not checked
+            else {
+                //is the aria-checked set to true? If so, set to false
+                favouriteForm[i].setAttribute("aria-checked", "false");
+            }
         }
-    }
     }
 
 
@@ -90,12 +103,12 @@
         }
 
         //set our counter text for the screen reader
-        if(currentNumber!=undefined){
+        if (currentNumber != undefined) {
             reeseStatus.innerText = `${currentNumber} Reese's Cups.`;
-        }   
+        }
     }
 
-    
+
 
 
 
