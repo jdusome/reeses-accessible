@@ -76,7 +76,7 @@
 
                 break;
         }
-        //depending on how many Reese's have been selected, change pictures/aria elements
+        //depending on how many Reese's have been selected, change pictures
         switch (parseInt(reeseNumber.value)) {
             case 0:
                 cupsimage3.style.display = "none";
