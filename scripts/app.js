@@ -73,6 +73,7 @@
                     currentNumber -= 3;
                     reeseNumber.value = currentNumber;
                 }
+
                 break;
         }
         //depending on how many Reese's have been selected, change pictures/aria elements
