@@ -104,15 +104,8 @@
 
         //set our counter text for the screen reader
         if (currentNumber != undefined) {
-            reeseStatus.innerText = `${currentNumber} Reese's Cups.`;
+            reeseStatus.innerText = `You can eat ${currentNumber} Reese's Cups.`;
         }
     }
-
-
-
-
-
-
-
 
 })(); // end of the IIFE

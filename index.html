@@ -31,7 +31,7 @@
             <div class="container">
 
                     <!-- Content Section -->
-                    <section>
+                    <section tabindex="2">
                         <h2>Interesting Facts</h2>
                         <p>The Reese’s candy was introduced in the year 1928.</p>
                         <p>The man who created the Reese’s Peanut Butter Cup was a farmer, by the name of Harry Burnett Reese.</p>
@@ -46,7 +46,7 @@
                     </section>
                     
                 <!-- Navigation Section -->
-                <nav role="navigation">
+                <nav role="navigation" tabindex="1">
                     <h2>Navigation</h2>
                     <!-- These links are from Hersheys Reeses's Website https://www.hersheys.com/reeses/en_us/home.html -->
                     <a href="https://www.hersheys.com/reeses/en_us/products.html">Products</a>
@@ -57,7 +57,7 @@
                 </nav>
 
                 <!-- Aside Section -->
-                <aside role="complementary">
+                <aside role="complementary" tabindex="5">
                     <h2>Poll</h2>
                     <h3 id="reesesfavourite">Which Reese's Peanut Butter Cup is Your Favourite?</h3>
 
@@ -82,9 +82,9 @@
                     </form>
                     <img src="images/peanut-butter-cup1.png" alt="">
 
-                    <h3 id="reesesnumber">How Many Peanut Butter Cups Can You Eat?</h3>
+                    <h3 id="reesesnumberheader">How Many Peanut Butter Cups Can You Eat?</h3>
                     <!-- This form is a live element, which means it will alert the user of any changes -->
-                    <form role="form" aria-describedby="reesesnumber" aria-live="assertive">
+                    <form role="form" aria-describedby="reesesnumberheader" aria-live="assertive">
                         <label for="number" id="cuplabel" aria-hidden="true">Reese Cups:</label>
                         <input type="text" aria-live="assertive" readonly aria-readonly="true" value="0" id="reese-number" aria-labelledby="cuplabel" aria-describedby="reesestatus"/>
                         <button type="button" title="add-3" id="add-3" aria-controls="reese-number">Add</button>
@@ -95,12 +95,11 @@
                     <img src="images/6-cups.png" alt="A small mound of reese's cups" style="display:none" id="6-cups">
                     <img src="images/9-cups.png" alt="A notable mound of reese's cups" style="display:none" id="9-cups">
                     <img src="images/12-cups.png" alt="A heaping pile of reese's cups" style="display:none" id="12-cups">
-
                 </aside>
 
             </div><!-- end of container -->
             <div class="nutrition">
-                <section>
+                <section tabindex="3">
                     <h2>Ingredients</h2>
                     <ul>
                         <li>Milk Chocolate</li>
@@ -113,7 +112,7 @@
                     </ul>
                 </section>
 
-                <section>
+                <section tabindex="4">
                     <h2>Nutritional Information</h2>
                     <ul>
                         <li><b>110 Calories</b></li>
@@ -132,7 +131,7 @@
                 </section>
             </div>
 
-            <section role="contentinfo">
+            <section role="contentinfo" tabindex="6">
                 <h3>Sources</h3>
                 <h4>Content</h4>
                 <ul>
@@ -149,7 +148,7 @@
                 </ul>
             </section>
         </main>
-        <footer>
+        <footer tabindex="7">
             <p><em rel="author">Joshua Dusome</em> | Georgian College 2017</p>
         </footer>
         <script src="scripts/app.js"></script>
